@@ -1,0 +1,50 @@
+admin-permission: "queue.admin"
+Titles:
+  title: "&6You are &a#%order% &6 in the queue"
+  subtitle: ""
+Messages:
+  queue:
+    empty: "&8| &cQueue &8| &7There's no players in the Queue currently"
+    help:
+      - "&8| &eQueue &8| &b/Queue GUI &9* &7Open the GUI menu"
+      - "&8| &eQueue &8| &b/Queue setMaxPlayers <number> &9* &7Set the max amount of players allowed to join the server"
+      - "&8| &eQueue &8| &b/Queue toggleEffects &9* &7Toggle blind effect for players in queue"
+      - "&8| &eQueue &8| &b/Queue toggleTeleport &9* &7Allow/Deny the plugin from teleporting players"
+      - "&8| &eQueue &8| &b/Queue setLoc <spawn/queue> &9* &7Set Spawn/Queue location to your current's"
+      - "&8| &eQueue &8| &b/Queue viewQueued &9* &7View the list of queued players"
+      - "&8| &eQueue &8| &b/Queue reload &9* &7Reload config.yml file"
+  priority:
+    add:
+      success: "&8| &aQueue &8| &e%name% &7has been added to the priority list"
+      error: "&8| &cQueue &8| &e%name% &7is already added to the priority list"
+    remove:
+      success: "&8| &aQueue &8| &e%name% &7has been removed from the priority list"
+      error: "&8| &cQueue &8| &e%name% &7is not in the priority list"
+    help:
+        - "&8| &eQueue &8| &b/Priority add <player> &9* &7Add a player to the priority list"
+        - "&8| &eQueue &8| &b/Priority remove <player> &9* &7Remove a player from the priority list"
+  toggle-blind:
+    enabled: "&8| &aQueue &8| &7Effects: &aEnabled"
+    disabled: "&8| &aQueue &8| &7Effects: &cDisabled"
+  toggle-teleport:
+    enabled: "&8| &aQueue &8| &7Teleport: &aEnabled"
+    disabled: "&8| &aQueue &8| &7Teleport: &cDisabled"
+  set-max-players:
+    success: "&8| &aQueue &8| &7Max players value has been set to &e%value%"
+    error: "&8| &cQueue &8| &7The value should be a number"
+  set-location:
+    queue: "&8| &aQueue &8| &7Queue location has been set to (&e%x%&7,&e %y%&7,&e %z%&7)"
+    spawn: "&8| &aQueue &8| &7Spawn location has been set to (&e%x%&7,&e %y%&7,&e %z%&7)"
+  config-reloaded: "&8| &aQueue &8| &7Config.yml file has been reloaded"
+  deny-chat: "&8| &cQueue &8| &7You can not chat while being in queue"
+  deny-commands: "&8| &cQueue &8| &7You can not type commands while being in the queue"
+  welcome: "&8| &eQueue &8| &aWelcome to the server!!"
+  no-permissions: "&8| &cQueue &8| &7You don't have enough permissions to do that!"
+allow-teleport: true
+allow-blind: true
+deny-chat: true
+deny-commands: false
+hide-players: true
+max-players: 30
+priority-list:
+  - "vip_player"

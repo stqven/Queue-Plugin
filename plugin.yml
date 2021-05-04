@@ -1,0 +1,8 @@
+name: Queue-System
+main: me.inv.own.Main
+version: 1.0
+author: inv
+api-version: 1.16
+commands:
+  queue:
+  priority:
