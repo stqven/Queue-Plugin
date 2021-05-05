@@ -18,10 +18,10 @@ public class Events implements Listener {
     @EventHandler (priority = EventPriority.MONITOR)
     public void onJoin(PlayerJoinEvent e) {
         Player p = e.getPlayer();
-        Queue.locs.put(p, p.getLocation());
         p.removePotionEffect(PotionEffectType.BLINDNESS);
         p.sendTitle("", "", 0, 20, 0);
         if (Bukkit.getServer().getOnlinePlayers().size() > Config.getMaxPlayers()) {
+            Queue.locs.put(p, p.getLocation());
             Queue.enQueue(p);
         }
     }
